@@ -19,10 +19,25 @@ Route::get('Hello-world', function () {
     return 'Hello-world';
 });
 
-Route::get('pengguna/{pengguna}', function ($pengguna) {
-    return "Hello-world dari pengguna $pengguna";
-});
+//Route::get('pengguna/{pengguna}', function ($pengguna) {
+ // return "Hello-world dari pengguna $pengguna";
+//});
 
-Route::get('kelasD2/framework{mhs?}', function ($mhs="anonim") {
-    return "selamat datang $mhs";
-});
+//Route::get('kelasD2/framework{mhs?}', function ($mhs="anonim") {
+   // return "selamat datang $mhs";
+//});
+
+Route::get('pengguna','PenggunaController@awal');
+Route::get('pengguna/tambah','PenggunaController@tambah');
+Route::get('ruangan','ruanganController@awal');
+Route::get('ruangan/tambah','ruanganController@tambah');
+Route::get('matakuliah','matakuliahController@awal');
+Route::get('matakuliah/tambah','matakuliahController@tambah');
+Route::get('mahasiswa','mahasiswaController@awal');
+Route::get('mahasiswa/tambah','mahasiswaController@tambah');
+Route::get('dosen','dosenController@awal');
+Route::get('dosen/tambah','dosenController@tambah');
+Route::get('dosen_matakuliah','dosen_matakuliahController@awal');
+Route::get('dosen_matakuliah/tambah','dosen_matakuliahController@tambah');
+Route::get('jadwal_matakuliah','jadwal_matakuliahController@awal');
+Route::get('jadwal_matakuliah/tambah','jadwal_matakuliahController@tambah');
