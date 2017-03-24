@@ -16,7 +16,7 @@
                 width: 100%;
                 display: table;
                 font-weight: 100;
-                font-family: 'Lato';
+                font-family: 'Times New Romans';
             }
 
             .container {
@@ -31,7 +31,7 @@
             }
 
             .title {
-                font-size: 96px;
+                font-size: 98px;
             }
         </style>
     </head>
