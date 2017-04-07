@@ -6,20 +6,21 @@ use Illuminate\Database\Eloquent\Model;
 
 class jadwal_matakuliah extends Model
 {
-	protected $table = 'jadwal_matakuliah';
-	protected $fillable = ['mahasiswa_id','ruangan_id','dosen_matakuliah_id'];
-	public function mahasiswa()
-	{
-		return $this->belongsToMany(mahasiswa::class);
-	}
+  protected $table = 'jadwal_matakuliah';
+  protected $fillable = ['mahasiswa_id','ruangan_id','dosen_matakuliah_id'];
 
-	public function ruangan()
-	{
-		return $this->belongsToMany(ruangan::class);
-	}
+  public function mahasiswa()
+  {
+    return $this->belongsTo(mahasiswa::class);
+  }
 
-	public function dosen_matakuliah()
-	{
-		return $this->belongsToMany(dosen_matakuliah::class);
-	}
+  public function ruangan()
+  {
+    return $this->belongsTo(ruangan::class);
+  }
+
+  public function dosen_matakuliah()
+  {
+    return $this->belongsTo(dosen_matakuliah::class);
+  }
 }

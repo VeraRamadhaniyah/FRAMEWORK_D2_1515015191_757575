@@ -11,6 +11,6 @@ class ruangan extends Model
 
    public function jadwal_matakuliah()
    {
-   		return $this->hasMany(jadwal_matakuliah::class);
+   	return $this->hasMany(jadwal_matakuliah::class);
    }
 }

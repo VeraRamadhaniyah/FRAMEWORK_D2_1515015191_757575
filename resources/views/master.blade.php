@@ -77,7 +77,7 @@
 					<nav class="navbar navbar-default navbar-fixed-bottom">
 					<footer class="container">
 									<!-- please dont delete this -->
-									created by <a href="http://twitter.com/triasbrata"><span><i class="fa fa-twitter" style="color:#1da1f2"></i> @triasbrata</span></a></footer>
+									created by <a href="http://twitter.com/triasbrata"><span><i class="fa fa-twitter" style="color:#1da1f2"></i> @veraramadhan</span></a></footer>
 	</nav> <script type="text/javascript" src="{{asset('component/jquery/dist/jquery.min.js') }}"></script>
 	 <script type="text/javascript" src="{{asset('component/bootstrap/dist/js/bootstrap.min.js') }}"></script>
 	<script type="text/javascript">$(function () {le="tooltip"]').tooltip();</script></body>
